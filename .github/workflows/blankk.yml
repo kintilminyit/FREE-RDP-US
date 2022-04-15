@@ -11,9 +11,9 @@ jobs:
     steps:
     - name: Download Ngrok & NSSM
       run: |
-        Invoke-WebRequest https://github.com/jetushack4/FREE-RDP-US/blob/master/Files/ngrok32.exe -OutFile ngrok.exe
-        Invoke-WebRequest https://github.com/jetushack4/FREE-RDP-US/blob/master/Files/ngrok64.exe -OutFile ngrok64.exe
-        Invoke-WebRequest https://github.com/jetushack4/FREE-RDP-US/blob/master/Files/nssm.exe -OutFile nssm.exe
+        Invoke-WebRequest https://github.com/kintilminyit/FREE-RDP-US/blob/master/Files/ngrok32.exe -OutFile ngrok.exe
+        Invoke-WebRequest https://github.com/kintilminyit/FREE-RDP-US/blob/master/Files/ngrok64.exe -OutFile ngrok64.exe
+        Invoke-WebRequest https://github.com/kintilminyit/FREE-RDP-US/blob/master/Files/nssm.exe -OutFile nssm.exe
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
         copy nssm.exe C:\Windows\System32
